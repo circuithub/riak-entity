@@ -4,7 +4,7 @@ utils = require "./utils"
 # Dao
 # -----------
 # Base class for all Dao classes. Some common methods should be implemented here.
-Dao = exports.Dao = class Dao
+module.exports = class Dao
 
   constructor: (@bucket, @log = true) ->
     @db = riak.getClient({debug: @log})
