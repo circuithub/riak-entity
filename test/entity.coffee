@@ -1,12 +1,5 @@
 should = require "should"
-Entity = require("../index").Entity
-
-class TestEntity extends Entity
-
-  constructor: (@_id, @prop1, @prop2) ->
-
-  attributes: =>
-    prop1 : @prop1
+TestEntity = require "./helper/test.entity"
 
 describe "new entity", ->
   entity = new TestEntity("some-id", 1, 4)  
